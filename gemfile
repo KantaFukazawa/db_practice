@@ -1,3 +1,21 @@
+# frozen_string_literal: true
+
+source "https://rubygems.org"
+
+git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
+
+# gem "rails"
+
+# --pathオプションつきのインストールでおきたこと。
+
+# --pathの引数のディレクトリがつくられる
+# 今回の例だとvendorディレクトリがつくられその中にbundleディレクトリがつくられる
+# budleディレクトリ以下に、さらにディレクトリ構造がつくられる
+# vendor/bundle/ruby/2.4.0/gems/インストールしたgemのシステムファイル
+# .bundleディレクトリもつくられる
+# .bundleディレクトリの中にconfigファイルがつくられる
+# configファイルにpathオプションの引数のディレクトリが書き込まれる
+# configファイルの内容がBundlerに登録されるので、次回からbunle installする際はpathオプションつける必要はない（つけなくても自動で、システムにではなくvendorディレクトリ内にインストールされてしまう）
 gem 'pg'
 gem 'activerecord'
 gem 'dotenv'
