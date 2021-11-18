@@ -1,0 +1,32 @@
+insert into tests (
+    raceno,
+    events,
+    groups,
+    rank1,
+    crew_rank1,
+    rank2,
+    crew_rank2,
+    rank3,
+    crew_rank3)
+values (
+    1,
+    '男子エイト',
+    '予選A組',
+    1,
+    'A大学',
+    2,
+    'B大学',
+    3,
+    'Cクラブ'
+    ),
+    (
+    2,
+    '男子エイト',
+    '予選B組',
+    1,
+    'D大学',
+    2,
+    'E大学',
+    3,
+    'Fクラブ'
+);
