@@ -1,0 +1,2 @@
+2021-11-18 08:16:19.737 JST [67051] FATAL:  database files are incompatible with server
+2021-11-18 08:16:19.737 JST [67051] DETAIL:  The data directory was initialized by PostgreSQL version 13, which is not compatible with this version 14.1.
